@@ -2,6 +2,9 @@
 "Current", "Hourly", "Daily"  accurate forecast and special "Wind" page
 
 
+https://play.google.com/store/apps/details?id=com.kivitool.openweatherchannel
+
+
 ![IMG_20200926_110432](https://user-images.githubusercontent.com/53703480/94334941-ed7b5580-ffe8-11ea-82c1-5ba8100f0a6d.jpg)
 ![IMG_20200926_110514](https://user-images.githubusercontent.com/53703480/94334945-f704bd80-ffe8-11ea-9a7c-6ab0695bf2f7.jpg)
 ![IMG_20200926_110556](https://user-images.githubusercontent.com/53703480/94334953-0126bc00-ffe9-11ea-89df-a68d62cdd34e.jpg)
