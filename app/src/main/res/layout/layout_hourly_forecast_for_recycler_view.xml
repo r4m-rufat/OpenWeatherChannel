@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_hour_forHourly"
+            android:layout_centerHorizontal="true"
+            android:text="3 PM"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/stiuation_image_for_hourly"
+            android:layout_below="@+id/txt_hour_forHourly"
+            android:src="@drawable/sun"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/opacity_dark_black"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/stiuation_image_for_hourly">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/humidity_image_for_hourly"
+                android:src="@drawable/ic_humidity"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_humidity_for_hourly"
+                android:layout_toRightOf="@+id/humidity_image_for_hourly"
+                android:text="5 %"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+
+

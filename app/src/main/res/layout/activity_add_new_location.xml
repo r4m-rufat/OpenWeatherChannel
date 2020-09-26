@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DrawerLayoutItems.AddNewLocation">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/app_bar">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/backArrow"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add new location"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/backArrow"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/iconlocation"
+                    android:src="@drawable/ic_location"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"/>
+
+            </RelativeLayout>
+
+
+        </Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Write only city name and tap to find button!"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:id="@+id/linear_layout"
+        android:layout_below="@id/search">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="only city name"
+            android:inputType="textPostalAddress"
+            android:layout_below="@+id/search"
+            android:id="@+id/add_new_location"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:background="@drawable/gray_border_all"
+            android:layout_weight="85"/>
+
+        <ImageView
+            android:id="@+id/search_location"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_below="@id/search"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="15"
+            android:layout_toRightOf="@id/add_new_location"/>
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_rotate_wind_forHourly"
+        android:layout_below="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_margin="100dp"
+        app:lottie_rawRes="@raw/location"/>
+
+</RelativeLayout>

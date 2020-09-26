@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/txt_wind_forecast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind forecast"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlayout1"
+            android:layout_below="@+id/txt_wind_forecast"
+            android:layout_marginTop="10dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_rotate_wind_forHourly"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/wind_turbine"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/relative_wind"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lottie_rotate_wind_forHourly">
+
+                <TextView
+                    android:id="@+id/txt_wind_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:text="Loading..."
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/txt_m_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m/sec"
+                    android:layout_toRightOf="@+id/txt_wind_value"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_km_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="km/h"
+                    android:layout_toRightOf="@+id/txt_wind_value"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_wind_speed_forHourly"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                app:lottie_loop="true"
+                android:layout_toRightOf="@id/relative_wind"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/wind_speed"/>
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wind_recyclerView"
+            android:layout_below="@+id/rlayout1"
+            android:padding="5dp"/>
+
+
+    </RelativeLayout>
+

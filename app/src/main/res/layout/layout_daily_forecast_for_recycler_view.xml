@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_week_forDaily"
+            android:text="THU"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_monthly_date_time"
+            android:layout_centerHorizontal="true"
+            android:text="13/8"
+            android:layout_below="@+id/txt_week_forDaily"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/stiuation_image_for_daily"
+            android:layout_below="@+id/txt_monthly_date_time"
+            android:src="@drawable/sun"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/humidity_image_for_daily"
+            android:layout_below="@+id/stiuation_image_for_daily"
+            android:src="@drawable/ic_humidity"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_humidity_for_daily"
+            android:layout_toRightOf="@+id/humidity_image_for_daily"
+            android:text="5 %"
+            android:textColor="@color/white"
+            android:layout_below="@+id/stiuation_image_for_daily"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+
+    </RelativeLayout>

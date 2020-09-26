@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_for_drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:theme="@style/MyTheme"
+            android:background="@color/opacity_black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbar_spinner"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/share_image"
+                    android:src="@drawable/ic_share"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+</merge>

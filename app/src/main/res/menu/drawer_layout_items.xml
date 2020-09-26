@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+
+        <item android:id="@+id/add_new_location" android:title="Add new location" android:icon="@drawable/ic_add"/>
+        <item android:id="@+id/delete_location" android:title="Delete location" android:icon="@drawable/ic_delete"/>
+
+    </group>
+
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+
+        <item android:id="@+id/my_location" android:title="My location" android:icon="@drawable/ic_my_location"/>
+
+    </group>
+    <group android:id="@+id/group3" android:checkableBehavior="single">
+
+        <item android:id="@+id/settings" android:title="Settings" android:icon="@drawable/ic_settings"/>
+
+    </group>
+    <group android:id="@+id/group4" android:checkableBehavior="single">
+
+        <item android:id="@+id/about_the_application" android:title="About the application" android:icon="@drawable/ic_about"/>
+
+    </group>
+
+    <group android:id="@+id/group5" android:checkableBehavior="single">
+
+        <item android:id="@+id/contact_us" android:title="Contact us" android:icon="@drawable/ic_contact_mail"/>
+
+    </group>
+
+</menu>

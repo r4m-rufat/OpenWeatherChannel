@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerLayoutItems.AboutTheApplication">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_for_about">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backArrowForAbout"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AboutTheApplication"
+                android:layout_toRightOf="@+id/backArrowForAbout"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="About the application"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:id="@+id/rel_layout1"
+        android:layout_below="@+id/toolbar_for_about">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:id="@+id/rlayout2"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:text="Open"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:id="@+id/Open"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:text="Weather"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/Open"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:id="@+id/Weather"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:text="Channel"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/Weather"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:id="@+id/Channel"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/app_icon"
+            android:src="@drawable/weatherlogo"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/created"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_layout1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:text="O.W.C LTD"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Version"
+        android:layout_below="@+id/created"
+        android:text="Version: 8.0.1"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="40dp"
+        android:layout_below="@id/Version"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:id="@+id/about"
+        android:text="Open Weather Channel provides you some accurate and absolutely right informations: daily, hourly, current and wind/3 hourly !"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/created_location"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/about"
+        android:text="Created in 2020, Azerbaijan"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+
+
+
+</RelativeLayout>

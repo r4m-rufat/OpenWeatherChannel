@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splashrelLayout"
+    android:background="@drawable/splash_back_drawable"
+    tools:context=".SplashActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/header_image"
+        android:src="@drawable/weatherlogo"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/owc_text"
+        android:textStyle="bold"
+        android:fontFamily="@font/cabin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Weather Channel"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_below="@+id/header_image"
+        android:layout_marginTop="30dp"/>
+
+
+
+</RelativeLayout>

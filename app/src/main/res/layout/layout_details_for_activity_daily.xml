@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_border_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daily_date"
+            android:text="TUE 18/8"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partly cloudy"
+        android:textColor="@color/white"
+        android:layout_below="@id/daily_date"
+        android:id="@+id/txt_weather_stiuation"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morning: 12"
+            android:textColor="@color/white"
+            android:layout_below="@id/txt_weather_stiuation"
+            android:id="@+id/morning_temprature"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evening: 20"
+            android:textColor="@color/white"
+            android:layout_below="@id/morning_temprature"
+            android:id="@+id/evenining_temprature"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night: 14"
+            android:textColor="@color/white"
+            android:layout_below="@id/evenining_temprature"
+            android:id="@+id/night_tempratue"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity: 15%"
+            android:textColor="@color/white"
+            android:layout_below="@id/night_tempratue"
+            android:id="@+id/txt_humidity_for_daily"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure: 1018 pHa"
+            android:textColor="@color/white"
+            android:layout_below="@id/txt_humidity_for_daily"
+            android:id="@+id/txt_pressure"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunrise: 6:04 AM"
+            android:textColor="@color/white"
+            android:layout_below="@id/txt_pressure"
+            android:id="@+id/txt_sunrise"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UV index: 8"
+            android:textColor="@color/white"
+            android:layout_below="@id/txt_sunrise"
+            android:id="@+id/txt_uv_index"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunset: 6:04 AM"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/txt_sunrise"
+            android:layout_below="@+id/txt_pressure"
+            android:id="@+id/txt_sunset"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"/>
+
+
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/stiuation_image_for_daily"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="↑ 30°C"
+        android:textColor="@color/white"
+        android:layout_below="@+id/morning_temprature"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/stiuation_image_for_daily"
+        android:id="@+id/max_temprature"
+        android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↓ 23°C"
+            android:textColor="@color/white"
+            android:layout_below="@+id/max_temprature"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/stiuation_image_for_daily"
+            android:id="@+id/min_temprature"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

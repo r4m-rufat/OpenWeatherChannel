@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:id="@+id/rel_layout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="60">
+
+        <com.github.tianma8023.ssv.SunriseSunsetView
+            android:id="@+id/ssv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            app:ssv_label_horizontal_offset="2dp"
+            app:ssv_label_text_color="@color/white"
+            app:ssv_label_text_size="12sp"
+            app:ssv_label_vertical_offset="1dp"
+            app:ssv_shadow_color="@color/yellow"
+            app:ssv_sun_color="#F40000"
+            app:ssv_sun_radius="5dp"
+            app:ssv_track_color="@color/white"
+            app:ssv_track_width="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/border"
+            android:textSize="0.1sp"
+            android:layout_below="@id/ssv"
+            android:background="@drawable/gray_border_bottom"/>
+
+
+        <TextView
+            android:id="@+id/durationOfDay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/border"
+            android:text="Duration of the day: Loading..."
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="40">
+
+        <TextView
+            android:id="@+id/sunriseView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Loading..."
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sunsetView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sunriseView_time"
+            android:layout_marginTop="5dp"
+            android:text="Loading..."
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_rotate_wind_forHourly"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sunsetView_time"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/sun"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

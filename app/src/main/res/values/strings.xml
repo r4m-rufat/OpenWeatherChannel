@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Open Weather Channel</string>
+    <string name="open" translatable="false">Open</string>
+    <string name="close" translatable="false">Close</string>
+    <string-array name="string_for_spinner" android:color="#fff">
+        <item android:color="#fff">Zardab</item>
+        <item android:color="#fff">Baku</item>
+    </string-array>
+
+    <string name="map_key" translatable="false">AIzaSyCxiyreDbkDxeSdyfGVuk-EkAXIEne9mX8</string>
+</resources>

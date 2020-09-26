@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="color">@style/spinner_style</item>
+
+        <item name="android:windowAnimationStyle">@style/windowAnimationTrasnition</item>
+
+        <item name="android:windowFullscreen">true</item>
+
+
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/opacity_black</item>
+        <item name="colorPrimaryDark">@color/opacity_dark_black</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="color">@style/spinner_style</item>
+        <item name="drawerArrowStyle">@style/DrawerColor</item>
+
+        <item name="android:windowAnimationStyle">@style/windowAnimationTrasnition</item>
+        <item name="android:actionOverflowButtonStyle">@style/DotsDarkTheme</item>
+
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="DrawerColor" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="spinner_style">
+
+        <item name="android:color">#fff</item>
+
+    </style>
+
+    <style name="windowAnimationTrasnition">
+
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+
+    </style>
+
+
+    <style name="DotsDarkTheme" parent="@style/Widget.AppCompat.ActionButton.Overflow" >
+        <item name="android:tint">@color/white</item>
+    </style>
+
+
+</resources>

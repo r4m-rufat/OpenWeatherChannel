@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuItem.Help"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/help_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/help_toolbar"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/default_options"
+                android:text="Default options"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Temprature: Celcius (°C)"
+                android:textSize="18sp"
+                android:id="@+id/default_temprature"
+                android:layout_below="@+id/default_options"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Wind speed: metr/second (m/sec)"
+                android:textSize="18sp"
+                android:id="@+id/default_wind"
+                android:layout_below="@+id/default_temprature"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/humidity_and_preciptitation"
+                android:layout_below="@+id/default_wind"
+                android:textColor="@color/black"
+                android:text="• Humidity and preciptation: with percent (%)"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sunrise_sunset"
+                android:layout_below="@id/humidity_and_preciptitation"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="• Sunrise and sunset: Fit your local time"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ic_humidity_mark"
+                android:layout_below="@+id/sunrise_sunset"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_humidity"
+                android:background="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_marks"
+                android:layout_below="@id/sunrise_sunset"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="This mark is for Humidity"
+                android:layout_toRightOf="@+id/ic_humidity_mark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/advanced_options"
+                android:text="Advanced options"
+                android:layout_below="@+id/txt_marks"
+                android:layout_margin="10dp"
+                android:textSize="36sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_new_location"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Add new location"
+                android:layout_below="@+id/advanced_options"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete_location"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Delete location"
+                android:layout_below="@+id/add_new_location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_location"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• My location"
+                android:layout_below="@+id/delete_location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Settings"
+                android:layout_below="@+id/my_location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_the_application"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• About the application"
+                android:layout_below="@+id/settings"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/txt_add_new_location"
+                android:text="Add new location"
+                android:layout_below="@+id/about_the_application"
+                android:layout_margin="10dp"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/click_button"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Click the this button"
+                android:layout_below="@+id/txt_add_new_location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/click_button"
+                android:id="@+id/dehaze"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/txt_add_new_location"
+                android:src="@drawable/ic_dehaze"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_new_location_item"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• After select 'Add new location' item, you can search"
+                android:layout_below="@+id/click_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/txt_delete_location"
+                android:text="Delete location"
+                android:layout_below="@+id/add_new_location_item"
+                android:layout_margin="10dp"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete_location_selected"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• You choose 'Delete location' item"
+                android:layout_below="@+id/txt_delete_location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete_location_information"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• In this stiuation, location which you selected in the spinner deletes"
+                android:layout_below="@+id/delete_location_selected"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/txt_my_location"
+                android:text="My location"
+                android:layout_below="@+id/delete_location_information"
+                android:layout_margin="10dp"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_my_location_selected"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Select 'My location' item"
+                android:layout_below="@+id/txt_my_location"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_my_location_selected_informations"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• İn this time, opening map and showing your current location"
+                android:layout_below="@+id/txt_my_location_selected"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/settings_item"
+                android:text="Settings"
+                android:layout_below="@+id/txt_my_location_selected_informations"
+                android:layout_margin="10dp"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_selected"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Select 'Settings' item in drawer and this page opens"
+                android:layout_below="@+id/settings_item"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/settings_image"
+                android:src="@drawable/settings_image"
+                android:layout_below="@+id/settings_selected"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/settings_see"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="As you can see, you have 4 options"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_temprature"
+                android:layout_below="@+id/settings_see"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Temprature settings"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_wind"
+                android:layout_below="@+id/settings_temprature"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Wind speed settings"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_notification"
+                android:layout_below="@+id/settings_wind"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• Notification"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_about_the_application"
+                android:layout_below="@+id/settings_notification"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="• About the application"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:id="@+id/temprature_settings_options"
+                android:layout_below="@+id/settings_about_the_application"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:text="After selected 'Temprature settings', opening a page like this:"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/image_temprature_settings"
+                android:layout_below="@+id/temprature_settings_options"
+                android:src="@drawable/temprature_dialog"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_wind_informations"
+                android:layout_below="@+id/image_temprature_settings"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Also wind settings as like this dialog you select it and change informations"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/notification_switch"
+                android:text="• Notification"
+                android:layout_below="@+id/settings_wind_informations"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notification_switch_informations"
+                android:layout_below="@+id/notification_switch"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="You switch on notification but Warning: for this, your telephone must be Android 8 and higher"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/txt_about_the_application"
+                android:text="About the application"
+                android:layout_below="@+id/notification_switch_informations"
+                android:layout_margin="10dp"
+                android:textSize="36sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_the_application_informations"
+                android:layout_below="@+id/txt_about_the_application"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="This is so easy. You select it and a page will open. You can read that informations"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/other_problems"
+                android:text="You still have questions ?"
+                android:layout_below="@+id/about_the_application_informations"
+                android:layout_margin="10dp"
+                android:textSize="36sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_problems_informations"
+                android:layout_below="@+id/other_problems"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Please email us at "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:text="info@openweathermap.org"
+                android:textColorLink="#0000EE"
+                android:textSize="14sp"
+                android:id="@+id/other_problems_informations2"
+                android:layout_toRightOf="@id/other_problems_informations"
+                android:layout_below="@+id/other_problems"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/other_problems_informations2"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/txt_other_problems_informations3"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="And we reply your questions soon"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/txt_link__for_website"
+                android:text="A lot of informations"
+                android:layout_below="@+id/txt_other_problems_informations3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:clickable="true"
+                android:text="openweathermap.org"
+                android:textColorLink="#0000EE"
+                android:textSize="14sp"
+                android:id="@+id/open_weather_map_link"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/txt_link__for_website"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

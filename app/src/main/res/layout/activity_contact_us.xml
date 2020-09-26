@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerLayoutItems.ContactUs"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_for_contactUs">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backArrowForContact"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_contact"
+                android:layout_toRightOf="@+id/backArrowForContact"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:text="Contact us"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/toolbar_for_contactUs"
+        android:textSize="14sp"
+        android:id="@+id/txt_contact_openweathermap"
+        android:layout_marginTop="10dp"
+        android:text="• If you have problems such as service and data delays, click on the link below and send an email about it"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rel_mail"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/txt_contact_openweathermap">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_info_mail"
+            android:tint="@color/black"
+            android:id="@+id/ic_info_mail"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:autoLink="all"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:layout_centerVertical="true"
+            android:textColorLink="#0000EE"
+            android:layout_toRightOf="@+id/ic_info_mail"
+            android:text="info@openweathermap.org"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/rel_mail"
+        android:textSize="14sp"
+        android:id="@+id/txt_contact_us"
+        android:text="• If you have problems with program, click on the email link below and send an email about program"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rel_contact_us"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/txt_contact_us">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_email"
+            android:tint="@color/black"
+            android:id="@+id/ic_email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:autoLink="all"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textStyle="italic"
+            android:textColorLink="#0000EE"
+            android:layout_toRightOf="@+id/ic_email"
+            android:text="openweatherchannel@gmail.com"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="100dp"
+        android:layout_below="@+id/rel_contact_us"
+        android:src="@drawable/emal_icon"/>
+
+</RelativeLayout>
