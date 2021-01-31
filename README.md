@@ -4,7 +4,7 @@
 https://play.google.com/store/apps/details?id=com.kivitool.openweatherchannel
 
 
-<img src="https://user-images.githubusercontent.com/53703480/94334941-ed7b5580-ffe8-11ea-82c1-5ba8100f0a6d.jpg" style = "width=300px,height=120px"></img>
+<img src="https://user-images.githubusercontent.com/53703480/94334941-ed7b5580-ffe8-11ea-82c1-5ba8100f0a6d.jpg" style = "width:300px,height:120px"></img>
 ![IMG_20200926_110514](https://user-images.githubusercontent.com/53703480/94334945-f704bd80-ffe8-11ea-9a7c-6ab0695bf2f7.jpg)
 ![IMG_20200926_110556](https://user-images.githubusercontent.com/53703480/94334953-0126bc00-ffe9-11ea-89df-a68d62cdd34e.jpg)
 ![download (6)](https://user-images.githubusercontent.com/53703480/94332482-c2900200-ffe6-11ea-9f8b-39c47c6ec3c6.png)
